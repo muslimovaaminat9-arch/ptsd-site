@@ -1,0 +1,16 @@
+:root {
+  --bg: #ffffff;      /* фон */
+  --text: #222222;    /* текст */
+  --accent: #6a4c93;  /* акцентный цвет */
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, serif;
+  line-height: 1.6;
+}
+
+main { max-width: 700px; margin: auto; padding: 2rem 1rem; }
+nav a { margin-right: 1rem; color: var(--accent); }
