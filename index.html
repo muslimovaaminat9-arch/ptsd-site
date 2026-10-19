@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ПТСР и КПТСР</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Rubik+Distressed&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<aside class="strip">
+  <nav aria-label="Разделы">
+    <a href="#/">Главная</a>
+    <a href="#/ptsd">ПТСР</a>
+    <a href="#/cptsd">КПТСР</a>
+  </nav>
+</aside>
+
+<main>
+
+  <!-- ГЛАВНАЯ -->
+  <section class="home" data-page="/">
+    <div class="intro">
+      <div class="title">
+        <h1>ПТСР и КПТСР:
+          <small>Всё, что нужно знать о травме и её последствиях</small>
+        </h1>
+      </div>
+
+      <button class="more" id="more" type="button">узнать подробно</button>
+
+      <div class="choose" id="choose">
+        <a class="door" href="#/ptsd"><span>ПТСР</span></a>
+        <a class="door" href="#/cptsd"><span>КПТСР</span></a>
+      </div>
+    </div>
+
+    <div class="gallery" aria-hidden="true">
+      <div class="track" id="track"></div>
+    </div>
+  </section>
+
+  <!-- ПТСР -->
+  <section class="page" data-page="/ptsd" hidden>
+    <a class="back" href="#/">← на главную</a>
+    <h2>ПТСР</h2>
+    <p>Посттравматическое стрессовое расстройство. Чаще связано с одним тяжёлым событием или несколькими, где была угроза жизни или безопасности.</p>
+    <div class="layer"><h3>Переживание заново</h3><p>Навязчивые воспоминания, кошмары, флешбэки.</p></div>
+    <div class="layer"><h3>Избегание</h3><p>Нежелание вспоминать, говорить, бывать в местах, которые напоминают о случившемся.</p></div>
+    <div class="layer"><h3>Ощущение угрозы</h3><p>Настороженность, сильный испуг от неожиданного, проблемы со сном.</p></div>
+    <p class="note">Сайт не заменяет помощь специалиста. Если вы в опасности, позвоните в экстренную службу (112).</p>
+  </section>
+
+  <!-- КПТСР -->
+  <section class="page" data-page="/cptsd" hidden>
+    <a class="back" href="#/">← на главную</a>
+    <h2>КПТСР</h2>
+    <p>Комплексное ПТСР. Чаще возникает после длительной травмы, из которой трудно выбраться: насилие или пренебрежение в детстве, домашнее насилие, плен.</p>
+    <p>Здесь есть всё то же, что при ПТСР, и ещё три группы симптомов:</p>
+    <div class="layer"><h3>Трудности с эмоциями</h3><p>Сильные вспышки или оцепенение, сложно успокоиться.</p></div>
+    <div class="layer"><h3>Негативный образ себя</h3><p>Стойкие стыд, вина, чувство «я сломана».</p></div>
+    <div class="layer"><h3>Трудности в отношениях</h3><p>Сложно доверять и сближаться или, наоборот, держаться на расстоянии.</p></div>
+    <p class="note">Сайт не заменяет помощь специалиста. Если вы в опасности, позвоните в экстренную службу (112).</p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
