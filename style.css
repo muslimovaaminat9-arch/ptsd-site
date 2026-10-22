@@ -238,3 +238,5 @@ table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: .98
 th, td { text-align: left; vertical-align: top; padding: .7rem .9rem; border-bottom: 1px solid rgba(239, 229, 220, .3); }
 thead th { font: 400 1.5rem 'Rubik Distressed', Impact, sans-serif; border-bottom: 2px solid var(--bone); }
 tbody th { font-weight: 500; width: 28%; }
+
+.pic.contain img { object-fit: contain; filter: none; background: rgba(0, 0, 0, .35); }
