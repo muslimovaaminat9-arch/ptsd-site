@@ -1,8 +1,7 @@
 // ===== КАРТИНКИ ДЛЯ ГАЛЕРЕИ =====
 // Загрузите картинки в папку assets/ и впишите пути сюда, например:
-// const IMAGES = ['assets/1.webp', 'assets/2.webp', 'assets/3.webp'];
 // Пока список пуст, показываются серые заглушки.
-const IMAGES = ['assets/1.webp', 'assets/2.webp', 'assets/3.webp', 'assets/4.webp', 'assets/5.webp'];
+const IMAGES = ['1.webp', '2.webp', '3.webp', '4.webp', '5.webp'];
 
 // ===== страницы =====
 const pages = document.querySelectorAll('[data-page]');
