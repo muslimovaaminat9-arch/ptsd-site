@@ -240,3 +240,24 @@ thead th { font: 400 1.5rem 'Rubik Distressed', Impact, sans-serif; border-botto
 tbody th { font-weight: 500; width: 28%; }
 
 .pic.contain img { object-fit: contain; filter: none; background: rgba(0, 0, 0, .35); }
+
+/* ===== ярлыки на главной ===== */
+.chips { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem .9rem; margin-top: .4rem; }
+.chip { position: relative; display: flex; align-items: center; gap: .8rem; padding: 1.05rem 1.1rem;
+  background: rgba(0, 0, 0, .28); border: 2px solid rgba(239, 229, 220, .75); border-radius: 4px;
+  color: var(--bone); text-decoration: none; font-weight: 500;
+  transition: transform .25s, background .25s, color .25s, box-shadow .25s; }
+.chip::before { content: ""; position: absolute; top: -10px; left: 50%; width: 3.4rem; height: 17px;
+  background: rgba(239, 229, 220, .38); transform: translateX(-50%) rotate(-3deg); transition: background .25s; }
+.chip b { font: 400 1.5rem 'Rubik Distressed', Impact, sans-serif; opacity: .7; }
+.chip:nth-child(1) { transform: rotate(-1.2deg); }
+.chip:nth-child(2) { transform: rotate(1deg); }
+.chip:nth-child(3) { transform: rotate(.8deg); }
+.chip:nth-child(4) { transform: rotate(-1deg); }
+.chips .chip:hover, .chips .chip:focus-visible, .chips .chip:active {
+  transform: rotate(0) translateY(-4px) scale(1.03);
+  background: var(--bone); color: var(--deep);
+  box-shadow: 0 0 0 4px rgba(179, 20, 31, .7), 0 12px 30px rgba(0, 0, 0, .55);
+  animation: tremor .4s linear; }
+.chip:hover::before, .chip:focus-visible::before { background: rgba(179, 20, 31, .8); }
+@media (prefers-reduced-motion: reduce) { .chip { animation: none !important; } }
